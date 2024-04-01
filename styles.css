@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: transparent; /* Changed from white to transparent */
+    padding: 2em;
+    text-align: center;
+    width: 300px;
+}
+
+.profile-icon {
+    background: url('images/profile_male_man_user_icon_187167.png') no-repeat center;
+    background-size: cover;
+    height: 140px; /* or the height you want for your icon */
+    width: 140px; /* match the width to the height for a square icon */
+    border-radius: 50%; /* Optional: if you want it to be round */
+    margin: 0 auto; /* Centers the icon in the container */
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin: 0.5em 0;
+    color: white;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+button {
+    background: #f2994a;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media only screen and (min-width: 1024px) {
+    .login-container {
+         width: 450px;
+         padding: 3em;
+     }
+ 
+    .profile-icon {
+         height: 160px;
+         width: 160px;
+     }
+ 
+     h1 {
+         font-size: 1.5em;
+     }
+ 
+    .input-group label {
+         right: 20px;
+     }
+ 
+     button {
+         padding: 12px;
+     }
+ }
